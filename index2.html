@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta con Fondo de Flores</title>
+    <style>
+        body {
+            background-image: url('https://images.unsplash.com/photo-1604400247036-e0b38afce25c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Imagen de flores */
+            background-size: cover; /* Cubre toda la pantalla */
+            background-position: center; /* Centra la imagen */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Altura mínima de la pantalla */
+            margin: 0;
+            font-family: 'Georgia', serif;
+        }
+
+        .carta {
+            background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semitransparente */
+            padding: 20px;
+            width: 90%; /* Ancho del 90% en móviles */
+            max-width: 600px; /* Ancho máximo en pantallas grandes */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            line-height: 1.6;
+            margin: 20px; /* Margen para evitar que toque los bordes */
+        }
+
+        .carta h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .carta p {
+            font-size: 16px;
+            color: #555;
+            text-align: justify;
+        }
+
+        .firma {
+            margin-top: 20px;
+            text-align: right;
+            font-style: italic;
+            color: #777;
+        }
+
+        .boton {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .boton a {
+            background-color: #ab11a7; /* Color de fondo del botón */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .boton a:hover {
+            background-color: #ff4a3d; /* Cambia el color al pasar el mouse */
+        }
+
+        /* Estilos para pantallas pequeñas (móviles) */
+        @media (max-width: 600px) {
+            .carta {
+                padding: 15px; /* Menos padding en móviles */
+            }
+
+            .carta h1 {
+                font-size: 20px; /* Título más pequeño en móviles */
+            }
+
+            .carta p {
+                font-size: 14px; /* Texto más pequeño en móviles */
+            }
+
+            .boton a {
+                font-size: 14px; /* Botón más pequeño en móviles */
+                padding: 8px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="carta">
+        <h1>Carta</h1>
+        <div class="firma">
+        </div>
+        <div class="boton">
+            <a href="https://www.youtube.com/watch?v=b3yIIVA5gOc" target="_blank">Haz clic aquí</a>
+        </div>
+    </div>
+</body>
+</html>
